@@ -1,0 +1,32 @@
+function drawAxes(){
+
+
+strokeWeight(2);
+
+
+
+stroke('red');
+
+line(0,0, 100, 0);
+
+
+
+stroke('yellow');
+
+line(-100,0, 0, 0);
+
+
+
+stroke('blue');
+
+line(0,100, 0, 0);
+
+
+
+stroke('green');
+
+line(0,-100, 0, 0);
+
+
+
+}

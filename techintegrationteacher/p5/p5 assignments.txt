@@ -1,0 +1,10 @@
+p5 assignments:
+
+make the bubbles do something on hover
+change bubbles to rectangle
+turn on and off
+
+
+Notes:
+
+if you're adding to an array while you're iterating over it, you need to be careful
