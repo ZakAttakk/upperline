@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<h2> Add Something to the To Do List! </h2>
+<br>
+<form method="post" action="/addItem">
+    New List Item: <input type="text" name="item"/><br>
+    <!--Due date: <input type="text" name="dueDate"/><br>-->
+    <input type="submit" value="Submit"/>
+</form>
+
+<form method="post" action="/showList">
+    <input type="submit" value="Show List"/>
+</form>
+
+<form method="post" action="/showListOnPage">
+    <input type="submit" value="Show List On Page"/>
+</form>
+
+<ul id="theList">
+<%= 
+if(@data != nil)
+    @data.map! { |item| "<li>" + item + "<br>" }
+    @data.join()
+
+%>
+</ul>
+
+
+</html>
