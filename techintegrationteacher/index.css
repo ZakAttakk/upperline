@@ -1,9 +1,6 @@
 html {
-    font-family: 'Arya', sans-serif;
-
+    font-family: 'News Cycle', sans-serif;
 }
-
-
 
 body{
   background: url(paris.jpg) no-repeat center center fixed;
@@ -11,25 +8,22 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 #grid {
   margin-left: 2px;
   display: grid;
-  height: 70vh;
+  height: 85vh;
   width: 44vw;
-  grid-row-gap: 20px;
-  grid-column-gap: 10px;
+  grid-row-gap: 9px;
+  grid-column-gap: 9px;
   grid-template-columns: repeat(6, 16.1%);
   grid-template-rows: 20% 50% 30%;
-  font-size: 10px;
+  /* font-size: 10px; */
   grid-template-areas:
     'name name name name name name'
     'admin admin children children coding coding'
     'resume resume resume summary summary summary'
-
-
 }
 
 #grid > div {
@@ -42,45 +36,54 @@ body{
   text-shadow: 1px 3px rgba(0,0,0,0.1);
   padding: 10px;
   line-height: 140%;
-
 }
 
 
 .item1 {
+  margin-top: 5px;
   grid-area: name;
   background-color: rgba(4,4,37, 0.00);
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: green;
 
 }
 .item2 {
   grid-area: admin;
-  background-color: rgba(239, 229, 218, 0.50);
-  font-size: 1.35rem;
+  background-color: rgba(239, 229, 218, 0.40);
+  font-size: 1.6rem;
   cursor: pointer;
 }
 .item3 {
   grid-area: children;
-  background-color: rgba(239, 229, 218, 0.50);
-  font-size: 1.35rem;
+  background-color: rgba(239, 229, 218, 0.40);
+  font-size: 1.6rem;
   cursor: pointer;
 }
 .item4 {
   grid-area: coding;
-  background-color: rgba(239, 229, 218, 0.5);
-  font-size: 1.35rem;
+  background-color: rgba(239, 229, 218, 0.40);
+  font-size: 1.6rem;
   cursor: pointer;
 }
+
+.item4smaller {
+  grid-area: coding;
+  background-color: rgba(239, 229, 218, 0.40);
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
 .item5 {
   grid-area: resume;
-  background-color: rgba(134, 6, 52, 0.50);
-  font-size: 1.35rem;
+  background-color: rgba(239, 229, 218, 0.40);
+  font-size: 1.6rem;
   cursor: pointer;
 }
+
 .item6 {
   grid-area: summary;
-  background-color: rgba(134, 6, 52, 0.50);
-  font-size: 1.35rem;
+  background-color: rgba(239, 229, 218, 0.40);
+  font-size: 1.6rem;
   cursor: pointer;
 }
 
@@ -96,6 +99,10 @@ div.item4:hover {
     background-color: rgba(130, 148, 167, 0.4);
 }
 
+div.item4smaller:hover {
+    background-color: rgba(130, 148, 167, 0.4);
+}
+
 div.item5:hover {
     background-color: rgba(130, 148, 167, 0.4);
 }
@@ -103,3 +110,15 @@ div.item5:hover {
 div.item6:hover {
     background-color: rgba(130, 148, 167, 0.4);
 }
+
+#links{
+  display: none;
+}
+
+/* #trig{
+  display: none;
+} */
+
+/* #politics{
+  display: none;
+} */

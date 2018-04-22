@@ -1,7 +1,8 @@
 var alienList = [];
 
 function setup() {
-  createCanvas(500,500);
+  var canvas = createCanvas(500,500);
+  canvas.parent('canvasDiv');
   background(215);
   angleMode(DEGREES);
   rectMode(CENTER);
